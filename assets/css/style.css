@@ -264,3 +264,22 @@ input:focus, textarea:focus {
     border-bottom: 2px solid #ddd;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
+
+/* About Page Details */
+.about-section {
+    border-left: 10px solid #4b0082 !important;
+    margin-top: 50px;
+}
+
+.detail-box {
+    background: #fdfd96;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+
+.detail-box h3 {
+    margin-top: 0;
+    color: #4b0082;
+}
