@@ -113,3 +113,50 @@ input:focus, textarea:focus {
         flex-direction: column;
     }
 }
+
+/* Forest Ribbon Navbar Styles */
+.forest-navbar {
+    background-color: #1b4d3e; /* Deep Forest Green */
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #a8e6cf; /* Light mint green for contrast */
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #a8e6cf; /* Light green on hover */
+}
