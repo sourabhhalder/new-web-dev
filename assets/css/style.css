@@ -242,3 +242,25 @@ input:focus, textarea:focus {
     padding-top: 20px;
     font-size: 14px;
 }
+
+/* About Page Specifics */
+.about-content {
+    margin-top: 40px;
+    border-left: 10px solid #4b0082; /* Purple spine for this page */
+}
+
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.handwritten-box {
+    background: #fdfd96; /* Sticky note yellow */
+    padding: 15px;
+    border-radius: 5px;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
