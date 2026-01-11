@@ -1,0 +1,10 @@
+document.getElementById('slambookForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('fullName').value;
+    
+    alert("Thank you, " + name + "! Your memory has been saved to the Slambook.");
+    
+    // Clear the form after submission
+    this.reset();
+});

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Slambook | Share Memories</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="slambook-container">
+        <header class="slam-header">
+            <h1>My Digital Slambook</h1>
+            <p>Fill in the details to leave a memory!</p>
+        </header>
+
+        <form id="slambookForm" class="slam-form">
+            <div class="input-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="nickname">Nickname</label>
+                <input type="text" id="nickname" placeholder="What do friends call you?">
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="favColor">Favorite Color</label>
+                    <input type="color" id="favColor" value="#28a745">
+                </div>
+                <div class="input-group">
+                    <label for="dob">Birthday</label>
+                    <input type="date" id="dob">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="hobby">Hobbies</label>
+                <input type="text" id="hobby" placeholder="Cricket, Coding, Music...">
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message for Me</label>
+                <textarea id="message" rows="4" placeholder="Write something special..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Save to Slambook</button>
+        </form>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
