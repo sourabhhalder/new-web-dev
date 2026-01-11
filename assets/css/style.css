@@ -1,91 +1,115 @@
-/* Styling for the Slambook Page */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+    background: #e9ecef;
     margin: 0;
-    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Comic Sans MS', 'Segoe UI', cursive, sans-serif;
 }
 
-.slambook-container {
-    background: white;
-    width: 100%;
-    max-width: 600px;
+.slambook-page {
+    max-width: 850px;
+    margin: 20px auto;
+    background: #fff;
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    border-left: 10px solid #28a745; /* Slambook spine look */
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    border: 2px solid #ddd;
+    position: relative;
 }
 
-.slam-header {
+/* Notebook hole punches effect */
+.slambook-page::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    border-left: 2px dashed #ff9999;
+}
+
+.main-header {
     text-align: center;
+    border-bottom: 3px double #28a745;
     margin-bottom: 30px;
 }
 
-.slam-header h1 {
-    color: #2d3436;
-    margin: 0;
-    font-size: 2.5rem;
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 20px;
 }
 
-.slam-header p {
-    color: #636e72;
-}
-
-.input-group {
-    margin-bottom: 20px;
-}
-
-.input-group label {
-    display: block;
+legend {
     font-weight: bold;
-    margin-bottom: 8px;
-    color: #2d3436;
+    color: #28a745;
+    padding: 0 10px;
 }
 
-.input-group input, 
-.input-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 16px;
-    transition: border-color 0.3s;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
-.input-group input:focus {
-    border-color: #28a745;
-    outline: none;
-}
-
-.form-row {
+.field {
     display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.field label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 2px solid #28a745;
+    background: #f9fff9;
+}
+
+.footer-sign {
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
+    margin-top: 30px;
 }
 
-.form-row .input-group {
-    flex: 1;
-}
-
-.submit-btn {
+.save-btn {
     width: 100%;
     padding: 15px;
-    background-color: #28a745;
+    background: #28a745;
     color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
+    border-radius: 30px;
+    font-size: 20px;
     cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Hover Effect: Red + Zoom Out (Scale 0.95) */
+.btn-hover-effect {
     transition: all 0.3s ease;
 }
 
-.submit-btn:hover {
-    background-color: #ff4757; /* Turns Red on Hover as requested before */
-    transform: scale(0.98); /* Zoom out effect */
+.btn-hover-effect:hover {
+    background-color: #ff4757 !important;
+    transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+    .grid-container, .footer-sign {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
 }
