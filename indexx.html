@@ -10,10 +10,10 @@
 
     <nav class="forest-navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">🌲 SlamLife</a>
+            <a href="indexx.html" class="nav-logo">🌲 SlamLife</a>
             <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#more-about">More Info</a></li>
+                <li><a href="indexx.html">Home</a></li>
+                <li><a href="about.html">More Info</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Help</a></li>
             </ul>
@@ -29,58 +29,39 @@
         <form id="slamForm">
             <fieldset>
                 <legend>The Basics</legend>
-                <div class="field">
-                    <label>My Cool Name:</label>
-                    <input type="text" name="cool_name" required>
+                <div class="grid-container">
+                    <div class="field"><label>My Cool Name:</label><input type="text" name="cool_name" required></div>
+                    <div class="field"><label>My Groovy Nickname:</label><input type="text" name="nickname"></div>
+                    <div class="field"><label>My Home Run:</label><input type="text" name="home_run"></div>
+                    <div class="field"><label>Call Me At:</label><input type="tel" name="phone"></div>
+                    <div class="field"><label>Send Me Email At:</label><input type="email" name="email"></div>
+                    <div class="field"><label>My Birthday On:</label><input type="date" name="birthday"></div>
+                    <div class="field"><label>My Zodiac Sign is:</label><input type="text" name="zodiac"></div>
+                    <div class="field"><label>My Ambition:</label><input type="text" name="ambition"></div>
                 </div>
-                </fieldset>
-
+            </fieldset>
             <button type="submit" class="save-btn btn-hover-effect">Save My Memory</button>
         </form>
     </div>
-
-    <section id="more-about" class="slambook-page" style="margin-top: 50px; border-left: 10px solid #4b0082;">
-        <header class="main-header">
-            <h1>🕵️ More Details About Me</h1>
-            <p>The "Behind the Scenes" of my life!</p>
-        </header>
-
-        <div class="about-grid" style="display: flex; flex-direction: column; gap: 20px;">
-            <div class="field">
-                <label style="font-weight: bold; color: #4b0082;">My Life Philosophy:</label>
-                <p style="background: #fdfd96; padding: 15px; border-radius: 5px; font-style: italic;">"Live, Laugh, Code."</p>
-            </div>
-
-            <div class="field">
-                <label style="font-weight: bold; color: #4b0082;">My Childhood Hero:</label>
-                <p style="background: #fdfd96; padding: 15px; border-radius: 5px; font-style: italic;">My Grandpa & Batman.</p>
-            </div>
-
-            <div class="field">
-                <label style="font-weight: bold; color: #4b0082;">The Best Place I've Ever Visited:</label>
-                <p style="background: #fdfd96; padding: 15px; border-radius: 5px; font-style: italic;">The Himalayas.</p>
-            </div>
-        </div>
-    </section>
 
     <footer class="purple-footer">
         <div class="footer-container">
             <div class="footer-column">
                 <h4>Explore</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Chat With Us</a></li>
-                    <li><a href="#more-about">More Info</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="indexx.html">Home</a></li>
+                    <li><a href="about.html">More Info</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h4>Newsletter</h4>
                 <form class="newsletter-form">
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="email" placeholder="Email Address" required>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
         </div>
+        <div class="footer-bottom"><p>&copy; 2026 My Groovy Slambook</p></div>
     </footer>
 
     <script src="assets/js/script.js"></script>
